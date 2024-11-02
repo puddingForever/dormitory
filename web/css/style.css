@@ -1,0 +1,42 @@
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 상단 정렬 */
+  height: auto; /* 고정된 높이 제거 */
+}
+
+.outer_table {
+  border-collapse: collapse;
+  width: 50%; /* 테이블의 너비를 50%로 줄임 */
+  max-height: 500px; /* 최대 높이를 설정하여 공간을 조절 */
+  overflow-y: hidden; /* 세로 스크롤 제거 */
+}
+
+.outer_table td {
+  border: 1px solid black;
+  padding: 5px; /* 셀 패딩을 줄여 공간을 절약 */
+  text-align: center;
+  vertical-align: top; /* 셀 내용이 위쪽 정렬되도록 */
+  font-size: 0.9em; /* 폰트 크기 조정 */
+}
+
+.inner_table {
+  border: 1px solid gray;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 100%; /* 내부 테이블의 너비를 100%로 설정 */
+}
+
+.inner_table td {
+  padding: 3px; /* 내부 테이블의 셀 패딩을 줄임 */
+  font-size: 0.8em; /* 폰트 크기 조정 */
+}
+
+.selector_title {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.selector_select {
+  font-size: 2em;
+}
